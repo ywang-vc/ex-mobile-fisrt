@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@200;400;700&display=swap');
+
+
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+*, *:before, *:after{
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 576px;
+    margin: 0;
+    padding: 0;
+    font: 400 2rem/120% 'Oswald', sans-serif;
+}
+
+h1, h2, h3, h4{
+    font-family: 'Oswald', sans-serif;
+}
+
+p, h5{
+    font-family: 'Open Sans', sans-serif;
+    line-height: 150%;
+}
+
+section{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    margin: 0 auto;
+    padding: 0;
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container.full{
+    width: 100%;
+}
+
+/*---mobile header---*/
+
+header{
+    margin: 0;
+    padding: .5rem;
+}
+
+.logo{
+    height: 6rem;
+}
+
+.mobilemenu{
+    width: 2.5rem;
+}
+
+nav, .sns{
+    display: none;
+}
+
+/*-- banner---*/
+
+#banner{
+    background-image: url(../image/hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: cover;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.content{
+    margin: 0;
+    padding: 2rem 1rem;
+    width: 45%;
+    background-color: rgba(0, 0, 0, .7);
+    text-transform: uppercase;
+    text-align: right;
+}
+
+h1, h2, h3{
+    margin: 0;
+    font-weight: 200;
+    font-size: 2rem;
+}
+
+h2{
+    font-size: .8rem;
+    font-style: italic;
+}
+
+h1{
+    font-size: 3.5rem;
+    text-transform: uppercase;
+}
+
+span{
+    vertical-align: super;
+    font-size: 2rem;
+}
+
+#banner .content a{
+    margin: 2rem 0 0 0;
+    padding: 1rem 2rem;
+    float: right;
+    text-decoration: none;
+    color: #fff;
+    border: .1rem solid;
+    font: 200 1rem/120% 'Oswald', sans-serif;
+}
+
+#banner .content a:hover{
+    color:goldenrod;
+}
+
+/*---features---*/
+
+#feature{
+    margin: 4.5rem 0;
+}
+
+#feature .container{
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.column.item3{
+    display: none;
+}
+
+.column{
+    width: 47%;
+    padding: 0 .5rem;
+    display: block;
+    text-align: center;
+    color: #575757;
+}
+
+.column img{
+    height: 5rem;
+}
+
+h4{
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+.column p{
+    font-size: .8rem; 
+    margin: 0;
+}
+
+.column a{
+    font-size: .8rem;
+    color: #575757;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.column a:hover{
+    color: goldenrod;
+}
+
+/*banner2*/
+#pizzaad{
+    margin: 0;
+    padding: 0;
+    background-image: url(../image/pizza_ad.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#pizzaad .container.full{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+}
+
+.ad{
+    float: right;
+    width: 50%;
+    color: #fff;
+    margin: 0;
+    padding: 2rem;
+}
+
+.ad h1, .ad h3{
+    text-align: center;
+    line-height: 120%;
+    font-size: 3rem;
+}
+
+.ad h3{
+    font-weight: bold;
+}
+
+/*---mobile map----*/
+#gallery{
+    display: none;
+}
+
+#map{
+    background-color: #d9e5d9;
+}
+
+#map .container.full{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+#map h1{
+    text-align: center;
+    padding: 2rem 0;
+}
+
+/*mobile footer*/
+
+footer{
+    margin:0;
+    padding: 2rem;
+    background-color: #000;
+    color: #575757;
+}
+
+footer .container{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup{
+    margin: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+hr{
+    margin: 2rem auto;
+    width: 50%;
+    height: .05rem;
+    background-color: #575757;
+}
+
+.signup h3{
+    text-align: center;
+}
+
+.email{
+    margin: 2rem 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+#emailinput, .submit{
+    height: 2rem;
+    border: #575757 solid .1rem;
+    margin: 0 .5rem .5rem 0;
+    padding: .5rem;
+    text-transform: uppercase;
+}
+
+#emailinput{
+    color: #595959;
+    width: 23rem;
+}
+
+.submit{
+    background-color: #575757;
+    color: #fff;
+    width: 6rem;
+}
+
+.submit:hover{
+    background-color: goldenrod;
+    color: #000;
+    border: goldenrod;
+}
+
+.contact{
+    text-align: center;
+    font-size: 1rem;
+}
+
+h5{
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin: .5rem;
+}
+
+.address{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.detail{
+    margin: 1rem;
+}
+
+/* Media Queries */
+@media screen and (min-width: 576px) and (max-width:768px) /* for mobile */{
+
+}
+
+@media (min-width:768px) and (max-width:992px) /* for tablets */{
+
+}
+
+@media (min-width: 992px) and (max-width:1200px) /* for laptops */{
+    .mobilemenu{
+        display: none;}
+    
+    nav{
+        display: inherit;
+        margin: 0 20px;
+        flex-grow: 8;
+        font-weight: 600;
+        font-size: 14px;
+        letter-spacing: .048em;
+    }
+    
+    nav ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    nav ul li{
+        list-style: none;
+        margin: 0 3px;
+    }
+    
+    nav ul li div{
+        margin-left: 6px;
+        display: inline-flex;
+    }
+    
+    nav a{
+        text-decoration: none;
+        color: #575757;
+    }
+    
+    nav a:hover{
+        color: #000;
+    }
+    
+    .sns{
+        display: flex;
+        justify-content: flex-end;
+        width: 184px;
+    }
+    
+    header .sns img{
+        width: 23px;
+        height: 23px;
+        margin-right: 15px;
+    }
+
+    /*---gallery---*/
+
+    #gallery{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    #gallery img{
+        width: 25%;
+    }
+
+    #map{
+        display: none;
+    }
+}
+@media (min-width: 1200px) /* for large devices */{
+
+}
+
