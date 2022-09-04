@@ -18,11 +18,15 @@ body {
 
 h1, h2, h3, h4{
     font-family: 'Oswald', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 p, h5{
     font-family: 'Open Sans', sans-serif;
     line-height: 150%;
+    margin: 0;
+    padding: 0;
 }
 
 section{
@@ -83,7 +87,6 @@ nav, .sns{
 }
 
 h1, h2, h3{
-    margin: 0;
     font-weight: 200;
     font-size: 2rem;
 }
@@ -167,8 +170,6 @@ h4{
 
 /*banner2*/
 #pizzaad{
-    margin: 0;
-    padding: 0;
     background-image: url(../image/pizza_ad.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -307,45 +308,50 @@ h5{
 }
 
 /* Media Queries */
-@media screen and (min-width: 576px) and (max-width:768px) /* for mobile */{
+@media screen and (min-width: 576px) and /* for mobile */{
 
 }
 
-@media (min-width:768px) and (max-width:992px) /* for tablets */{
-
+@media (min-width:768px) /* for tablets */{
+    .column.item3{
+        display: block;
+    }
 }
 
-@media (min-width: 992px) and (max-width:1200px) /* for laptops */{
+@media (min-width: 992px)/* for laptops */{
     .mobilemenu{
-        display: none;}
+        display: none;
+    }
     
     nav{
         display: inherit;
-        margin: 0 20px;
-        flex-grow: 8;
-        font-weight: 600;
-        font-size: 14px;
-        letter-spacing: .048em;
+        margin: 0 1.25rem;
+        font-size: .8rem;
+        font-family: 'Open Sans', sans-serif;
+        letter-spacing: .1rem;
+        line-height: 200%;
     }
     
     nav ul{
         display: flex;
-        flex-wrap: wrap;
+        flex-flow: row wrap;
+        justify-content: flex-start;
     }
     
     nav ul li{
         list-style: none;
-        margin: 0 3px;
+        margin: 0 .2rem;
     }
     
     nav ul li div{
-        margin-left: 6px;
+        margin-left: .5rem;
         display: inline-flex;
     }
     
     nav a{
         text-decoration: none;
         color: #575757;
+        padding-right: .5rem;
     }
     
     nav a:hover{
@@ -364,6 +370,10 @@ h5{
         margin-right: 15px;
     }
 
+    #pizzaad, #map{
+        display: none;
+    }
+
     /*---gallery---*/
 
     #gallery{
@@ -379,8 +389,55 @@ h5{
     #map{
         display: none;
     }
+
+    /*-----footer------*/
+    footer .container{
+        flex-direction: row-reverse;
+        align-items: flex-start;
+        padding: 1rem 0 2rem 0;
+    }
+
+    .contact h1{
+        font-size: 2rem;
+        font-weight: 400;
+        margin-bottom: 1rem;
+    }
+
+    .address{
+        flex-direction: column;
+    }
+
+    .detail{
+        margin-bottom: .1rem;
+    }
+
+    .signup{
+        justify-content: flex-start;
+        margin-right: 3rem;
+    }
+    
+    hr{
+        display: none;
+    }
+    
+    .signup h3{
+        text-align: left;
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+    .email{
+        margin: 1rem 0;
+    }
+
 }
 @media (min-width: 1200px) /* for large devices */{
+    body{
+        max-width: 1920px;
+        margin: auto;
+    }
 
+    .address{
+        flex-direction: row;
+    }
 }
 
